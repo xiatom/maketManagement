@@ -2,15 +2,8 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>MarketManagement</display-name>
   
- <!-- 加载spring容器 -->
-    <context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:config/Spring-applicationContext.xml</param-value>
-    </context-param>
-    <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
-  
+
+
 <!--   前端控制器 -->
   <servlet>
     <servlet-name>springDispatcherServlet</servlet-name>
@@ -20,6 +13,11 @@
       <param-value>classpath:config/spring-*.xml</param-value>
     </init-param>
   </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.png</url-pattern>
+  </servlet-mapping>
   
 <!--   / 匹配所有的请求 匹配后交给spring的调度器servlet-->
 <!-- 由于url是匹配的/，所以会拦截所有请求，但如果不在拦截器中做出相应的处理那么所有静态的js、css以及页面中用到的图片就会访问不到 -->

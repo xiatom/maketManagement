@@ -13,7 +13,7 @@ package com.market.model;
 public class Manager {
 	private String managerName;
 	private String managerPassword;
-	
+	private int managerId;
 	public String getManagerName() {
 		return managerName;
 	}
@@ -25,6 +25,17 @@ public class Manager {
 	}
 	public void setManagerPassword(String managerPassword) {
 		this.managerPassword = managerPassword;
+	}
+	public int getManagerId() {
+		return managerId;
+	}
+	public void setManagerId(int managerId) {
+		this.managerId = managerId;
+	}
+	@Override
+	public String toString() {
+		return "Manager [managerName=" + managerName + ", managerPassword=" + managerPassword + ", managerId="
+				+ managerId + "]";
 	}
 	
 }

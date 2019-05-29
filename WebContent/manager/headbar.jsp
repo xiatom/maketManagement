@@ -32,15 +32,13 @@
 				<li><a
 					href="${pageContext.request.contextPath}/manager/home.jsp"
 					style="color: #fff">主页</a></li>
-				<li><a href="${pageContext.request.contextPath}/index.jsp"
-					style="color: #fff">主界面</a></li>
-
+					
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown"> 用户名 <b class="caret"></b>
 				</a>
 					<ul class="dropdown-menu">
 						<li><a href="#">个人信息</a></li>
-						<li><a href="#">登出</a></li>
+						<li><a href="${pageContext.request.contextPath}/index.jsp">登出</a></li>
 					</ul></li>
 			</ul>
 
@@ -49,9 +47,8 @@
 		</div>
 	</nav>
 
-	<footer class="footer">
-	<p>2019年夏季课设</p>
-	</footer>
-
+<div id="footer">
+2019年夏季课设
+</div>
 </body>
 </html>

@@ -1,5 +1,41 @@
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;	
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+#middle-body{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left:40px;
+  margin-right:40px;
+  background-color: #eee;
+}
+#middle-inside{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left:40px;
+  padding-right:40px;
+  background-color: #0F0;
+}
+#same-high-body{
+  margin-top:0px;
+  margin-left:40px;
+  background-color: #eee;
+}
+#footer {
+/*     background-color:black; */
+/*     color:white; */
+/*     clear:both; */
+/*     text-align:center; */
+/*    	padding:5px;	 */
+   	
+   	height:40px;
+   	position:absolute;
+   	bottom:0;
+   	width:100%;
+   	color:#777;
+   	text-align:center;
+   	background-color: black;
+    line-height: 40px;
+   	 	 
 }

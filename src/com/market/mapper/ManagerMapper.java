@@ -4,5 +4,5 @@ import com.market.model.Manager;
 
 
 public interface ManagerMapper {
-	public Manager checkManager(Manager manager);
+	public Integer checkManager(Manager manager);
 }

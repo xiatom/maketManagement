@@ -22,11 +22,14 @@
 		<property name="prefix" value="/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
-
+	
+	
 <!-- 使用默认servlet handler，就可以访问静态资源 -->
 	<mvc:default-servlet-handler />
 
-<!-- 	<mvc:view-controller path="/user/home" view-name="/home"/> -->
+<!-- 在springmvc中使用mvc:view-controller标签直接将访问url和视图进行映射，而无需要通过控制器 -->
+<!-- 	<mvc:view-controller path="/user/home" view-name="/login"/> -->
+
 	
 	<!--配置上传文件数据解析器  上传文件时需要配置-->
 	<bean id="multipartResolver"

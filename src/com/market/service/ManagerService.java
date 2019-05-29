@@ -1,4 +1,7 @@
 package com.market.service;
+
+import com.market.model.Manager;
+
 /**
 * 项目名:		MarketManagement
 * 包名:		com.market.service
@@ -11,5 +14,5 @@ package com.market.service;
 *
 **/
 public interface ManagerService {
-
+	public Integer checkManager(Manager manager);
 }
