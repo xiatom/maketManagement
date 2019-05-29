@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mabatis.org//DTD Mapper 3.0//EN"
-"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.market.mapper.VipMapper">
-	<select id="checkVip" parameterType="Vip" resultType="Vip">
-		select vip_name from t_vip where vip_id=#{VipId}
-	</select>
-
-</mapper>
